@@ -143,3 +143,178 @@ section{
     white-space:pre-line;
 
 }
+/* ===================================
+   Gallery
+=================================== */
+
+.gallery{
+
+    text-align:center;
+
+}
+
+.gallery h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:55px;
+
+    color:#ff4f88;
+
+    margin-bottom:50px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 20px 40px rgba(255,79,136,.30);
+
+}
+
+/* ===================================
+   Ending
+=================================== */
+
+.ending{
+
+    text-align:center;
+
+    padding-bottom:120px;
+
+}
+
+.ending h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+    color:#ff4f88;
+
+    margin-bottom:30px;
+
+}
+
+.ending p{
+
+    font-size:22px;
+
+    line-height:2;
+
+    white-space:pre-line;
+
+}
+
+/* ===================================
+   Music Button
+=================================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff4f88;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(255,79,136,.35);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:56px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.ending h2{
+
+font-size:50px;
+
+}
+
+}
